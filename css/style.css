@@ -1,0 +1,441 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+html,body{
+  margin:0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  overflow: hidden;
+}
+
+#section-1,  #section-2, #section-3, #section-4, #section-5, #section-6, #section-7{
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+}
+
+
+.section {
+  height: 100%;
+  width: 100%;
+}
+
+.section { position: absolute; }
+
+.box{
+  text-align: left;
+  border-bottom: 30px solid white;
+  justify-content: center;
+  padding: 15% 5% 0 0;
+  margin-left: 5%;
+  border-image: linear-gradient(to right, #F2EC9B 0%, #17263d 100%);
+  border-image-slice: 1;
+}
+
+.title{
+  font-size: 90px;
+  font-weight: 800;
+  color:#F2EC9B;
+  display: inline;
+  line-height: 6rem;
+}
+
+.subtitle {
+  display: inline;
+  text-transform: uppercase;
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.section {
+  background-color: #17263d;
+  height: 100%;
+  text-align: center;
+}
+
+p {
+  color:white;
+}
+
+.selections{
+  padding-top: 2%;
+}
+
+table {
+  background: #17263d;
+  text-align: center;
+}
+
+td { color: white;
+  background-color: #17263d;
+  width:100px;}
+
+  th {
+    color: #F2EC9B;
+    font-weight: 800;
+    font-size: 1.5em;
+  }
+
+  #tableTitle {
+    padding-top: 10px;
+    text-align: center;
+    text-transform: none;
+  }
+
+  label, .dataTables_info,  {
+    color:white;
+  }
+
+  #table_info{
+    color:white;
+  }
+
+  label {
+    display: none;
+  }
+
+  .paginate_button {
+    font-size: 15px;
+    color: white;
+  }
+
+
+  #country {
+    width: 200px;
+  }
+
+
+  .upper, .lower {
+    display: flex;
+    width: 100%;
+  }
+
+  p,select{
+    display: inline;
+  }
+
+  p {
+    padding: 20px;
+  }
+
+  .intro {
+    color: white;
+    width: 50%;
+    padding: 3% 2% 0 2%;
+    font-size: 1.4rem;
+  }
+
+  span {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  span{
+    color: #F2EC9B;
+  }
+
+  #map {
+    height: 100%;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  #chart-3 {
+    width: 70%;
+  }
+
+  #chart-3{
+    height:500px;
+  }
+
+  .wrapper {
+    display: flex;
+    padding:2%;
+    height: 100%;
+  }
+
+  .charts {
+    width:100%;
+    height:290px;
+    padding-bottom: 0;
+  }
+
+  #chart-1{
+    height:240px;
+    padding-top:10px;
+  }
+
+  .charts > svg{
+    display:block;
+  }
+
+
+  .highcharts-color-0 {
+    fill: #F2EC9B;
+    stroke: #F2EC9B;
+  }
+
+
+  .events {
+    display: block;
+    text-align: left;
+    margin: 0;
+  }
+
+  .events span{
+    font-size: 1.3rem;
+  }
+
+  .content{
+    width: 30%;
+  }
+
+  .container {
+    display: flex;
+    padding: 0 10%;
+    width: 80%;
+  }
+
+  .newsIMG {
+    max-width: 100%;
+    height: 100px;
+  }
+
+  .news {
+    text-align: left;
+  }
+
+  .newsInfo{
+    text-align: left;
+  }
+
+  #title1, #title2, #title3 {
+    font-size: 20px;
+    padding: 0;
+  }
+
+  #newsPageTitle{
+    text-align: left;
+    margin: 0;
+  }
+
+  #newsPageSubTitle {
+    display: block;
+    margin: 0;
+    padding-top: 10px;
+    text-transform: none;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  #sub1, #sub2, #sub3{
+    display: block;
+  }
+
+  ul {
+    text-align: left;
+    color: white;
+  }
+
+  li {
+    padding: 5px;
+  }
+
+  #section-8 p{
+    display: block;
+    padding: 30px 40px;
+    font-size: 1.3em;
+  }
+
+  #section-8 span {
+    font-size: 2.3rem;
+  }
+
+
+  @media (max-width:1024px){
+    span {
+      font-size: 1.5rem;
+    }
+
+    .intro{
+      font-size: 1.2rem;
+    }
+
+    #creditTitle{
+      font-size: 70px;
+    }
+
+
+    #section-8 p{
+      padding: 15px 40px;
+      font-size: 1.2em;
+    }
+
+    #section-8 span {
+      font-size: 2.1rem;
+    }
+  }
+
+
+  @media (max-width:870px){
+    span {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .intro{
+      font-size: .9rem;
+      padding: 10% 2% 0 2%;
+    }
+
+    #chart-1, #chart2{
+      width: 70%;
+    }
+
+    .events{
+      padding-bottom: 0;
+      font-size: .9em;
+    }
+
+    .events span {
+      font-size: 1rem;
+    }
+
+    #newsPageSubTitle {
+      font-size: 20px;
+    }
+
+    #newsPageTitle{
+      padding-bottom: 0;
+      font-size: 70px;
+    }
+
+    #sub1, #sub2, #sub3 {
+      display: block;
+      padding: 2px 0 0 0;
+      margin: 0;
+      font-size: .8em;
+      font-weight: 700;
+    }
+
+    #title1, #title2, #title3 {
+      font-size: 18px;
+      padding: 0;
+    }
+
+    #creditTitle{
+      font-size: 50px;
+      margin: 0;
+      padding: 5px 0;
+    }
+
+    ul {
+      margin: 0;
+      font-size: .9em;
+    }
+  }
+
+  @media (max-width:570px){
+    #table_info {
+      display: none;
+    }
+
+    .intro{
+      display: none;
+    }
+
+    #chart-1, #chart2{
+      width: 100%;
+    }
+
+    .title {
+      font-size: 60px;
+      font-weight: 800;
+      display: block;
+      line-height: 4rem;
+    }
+
+    .subtitle{
+      font-size: 30px;
+    }
+
+    .wrapper {
+      display: block;
+    }
+
+    .events{
+      display: none;
+    }
+
+    #chart-3{
+      width: 100%;
+      height: 450px;
+    }
+
+    .content {
+      width: 100%;
+      display: flex;
+    }
+    .selections {
+      display: flex;
+    }
+    .selections p {
+      padding: 0 5px;
+      font-size: .8em;
+      margin: 0;
+    }
+
+    .selections select {
+      font-size: .7em;
+    }
+
+    #newsPageSubTitle {
+      font-size: 15px;
+    }
+
+    #newsPageTitle{
+      font-size: 50px;
+    }
+
+    #sub1, #sub2, #sub3 {
+      font-size: .7em;
+      font-weight: 700;
+    }
+
+    #title1, #title2, #title3 {
+      font-size: 14px;
+      padding: 0;
+    }
+
+    .container {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+
+    ul{
+      font-size: .7em;
+      padding-left: 20px;
+    }
+
+    #creditTitle {
+      font-size: 30px;
+    }
+
+    #section-8 p{
+      padding: 10px;
+      font-size: .9em;
+    }
+
+    #section-8 span {
+      font-size: 1.3rem;
+    }
+  }

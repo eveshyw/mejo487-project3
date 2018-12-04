@@ -1,23 +1,137 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>From Cat Videos to Online Education</title>
-    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="icon" href="images/japan.png" type="image/x-icon"/>
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Assistant:800|Carter+One|Elsie:900|Fugaz+One|Montserrat:800" rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
-    <script>FontAwesomeConfig = { autoReplaceSvg: 'nest' } </script>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>When The Earth Is Shaking</title>
+  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="responsive.dataTables.css">
+  <link rel="stylesheet" type="text/css" href="css/theme.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" href="images/japan.png" type="image/x-icon"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+  <script>FontAwesomeConfig = { autoReplaceSvg: 'nest' } </script>
+</head>
+<body>
+  <div class="section-wrapper">
+  <div class="section" id="section-1" data-hash="section-1">
+    <div class="box">
+    <div class="title">When The Earth Is Shaking</div>
+    <div class="subtitle">118 Years Of Earthquake</div>
+  </div>
+  </div>
+  <div class="section" id="section-3" data-hash="section-3">
+    <div class="upper">
+      <div class="charts" id="chart-1">
+      </div>
+      <div class="intro" id="intro-1">A Magnitude <span>9.5</span> Earthquake was the largest one ever recorded. <span>The 1960 Valdivia Earthquake</span> occurred on May 22, 1960 in Chile.</div>
+    </div>
+    <div class="lower">
+      <div class="charts" id="chart-2">
+      </div>
+      <div class="intro" id="intro-2">The number of earthquakes that can be detected and located has been <span>increasing</span> since 2000. </div>
+    </div>
+  </div>
+  <div class="section" id="section-4" data-hash="section-4">
+    <div class="wrapper">
+      <div class="charts" id="chart-3">
+      </div>
+      <div class="content">
+        <div class="selections">
+              <p>Select a country:</p>
+              <select id="dropdown1" name="Country" onchange="changeBorough()">
+                <option value="All">All
+              </select>
+        </div>
+        <div class="selections">
+              <p>Select a month:</p>
+              <select id="dropdown2" name="Month" onchange="changeMonth()">
+                <option value="">All
+                <option value="-0.5">JAN
+                <option value="0.5">FEB
+                <option value="1.5">MAR
+                <option value="2.5">APR
+                <option value="3.5">MAY
+                <option value="4.5">JUN
+                <option value="5.5">JUL
+                <option value="6.5">AUG
+                <option value="7.5">SEP
+                <option value="8.5">OCT
+                <option value="9.5">NOV
+                <option value="10.5">DEC
+              </select>
+          </div>
+          <p class="events" id="china"><span>242769</span> People Died in 1976 Tangshan Earthquake in <span>China</span> on July 28, 1976. </p>
+          <p class="events" id="japan"><span>142807</span> People Died in 1923 Great Kantō Earthquake in <span>Japan</span> on September 1, 1923. </p>
+          <p class="events" id="iran"><span>50000</span> People Died in 1990 Manjil–Rudbar Earthquake in <span>Iran</span> on June 21, 1990. </p>
 
+        </div>
+    </div>
+  </div>
+  <div class="section" id="section-5" data-hash="section-5">
+    <div class="api" id="map">
+    </div>
+  </div>
+  <div class="section" id="section-6" data-hash="section-6">
+    <div class="api" id="news">
+      <p class="title" id=newsPageTitle>Stay Tuned</p>
+      <p class="subtitle" id=newsPageSubTitle>Today's Earthquake News (Sourece: News API)</p>
+      <div class="container" id="container1">
+      </div>
+      <div class="container" id="container2">
+      </div>
+      <div class="container" id="container3">
+      </div>
+    </div>
+  </div>
+  <div class="section" id="section-7" data-hash="section-7">
+    <p class="title" id="creditTitle">Sources & Credits</p>
+      <ul>
+        <li>Data Visualization Designs That Should Inspire You – 23 Infographics. Retrieved from https://www.designyourway.net/blog/inspiration/data-visualization-designs-that-should-inspire-you-23-infographics/</li>
+        <li>National Geophysical Data Center / World Data Service (NGDC/WDS): Significant Earthquake Database. National Geophysical Data Center, NOAA. doi:10.7289/V5TD9V7K</li>
+        <li>News API. Retrieved from https://newsapi.org/</li>
+        <li>Visualizing Data: Mapping Earthquakes. (2018) Retrieved from https://developers.google.com/maps/documentation/javascript/earthquakes#heatmaps</li>
+        <li>1960 Valdivia earthquake. In Wikipedia, The Free Encyclopedia. Retrieved from https://en.wikipedia.org/w/index.php?title=1960_Valdivia_earthquake&oldid=871714753</li>
+        <li>1976 Tangshan earthquake. In Wikipedia, The Free Encyclopedia. Retrieved from https://en.wikipedia.org/w/index.php?title=1976_Tangshan_earthquake&oldid=869698413</li>
+        <li>1923 Great Kantō earthquake. In Wikipedia, The Free Encyclopedia. Retrieved from https://en.wikipedia.org/w/index.php?title=1923_Great_Kant%C5%8D_earthquake&oldid=870049602</li>
+        <li>1990 Manjil–Rudbar earthquake. In Wikipedia, The Free Encyclopedia. Retrieved from https://en.wikipedia.org/w/index.php?title=1990_Manjil%E2%80%93Rudbar_earthquake&oldid=865504465</li>
+      </ul>
+    </div>
+    <div class="section" id="section-8" data-hash="section-8">
+      <p><span>About The Project: </span>The project "When The Earth Is Shaking - 118 Years Of Earthquake" aims to take a deep look at the earthquake events happening all over the world since 1900. By integrating various types of visualization, many trends and interesting facts are shown to us. Understanding both the earthquake itself and the causal relation between earthquakes and human behaviors, calendar years, geographic locations, etc. keeps us informed of what's happening with our natural environment.</p>
+      <p><span>About The Author: </span>The owner of this project, Yuwei Qian, is a graduate student at UNC, who majors in Information Science with a specialization of Human-Computer Interaction. She is passionate about technology and design. Creating user-friendly design is her goal and she is constantly inspired by mordern technology and how it helps improve education and life.</p>
+    </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.js"
-      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
-  </body>
+    <div class="section" id="section-2" data-hash="section-2">
+      <div class="subtitle" id="tableTitle">Earthquake Data</div>
+      <table id="table">
+        <thead>
+          <tr>
+            <th id="year">Year</th>
+            <th>Country</th>
+            <th>Magnitude</th>
+            <th>Deaths</th>
+            <th>Injuries</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </div>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src="js/dataTables.responsive.js"></script>
+<script src="js/config.js"></script>
+<script src="js/smartscroll.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAv4h6HFuncoqMHe4tmSIs_fnA18WEo-yE&callback=initMap"
+    async defer></script>
+
+</body>
 </html>
