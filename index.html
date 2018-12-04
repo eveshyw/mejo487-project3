@@ -6,10 +6,9 @@
   <title>When The Earth Is Shaking</title>
   <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" type="text/css" />
-  <link rel="stylesheet" type="text/css" href="responsive.dataTables.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.dataTables.css">
   <link rel="stylesheet" type="text/css" href="css/theme.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="icon" href="images/japan.png" type="image/x-icon"/>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
   <script>FontAwesomeConfig = { autoReplaceSvg: 'nest' } </script>
@@ -22,6 +21,22 @@
     <div class="subtitle">118 Years Of Earthquake</div>
   </div>
   </div>
+
+      <div class="section" id="section-2" data-hash="section-2">
+        <div class="subtitle" id="tableTitle">Earthquake Data</div>
+        <table id="table">
+          <thead>
+            <tr>
+              <th id="year">Year</th>
+              <th>Country</th>
+              <th>Magnitude</th>
+              <th>Deaths</th>
+              <th>Injuries</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+
   <div class="section" id="section-3" data-hash="section-3">
     <div class="upper">
       <div class="charts" id="chart-1">
@@ -41,7 +56,7 @@
       <div class="content">
         <div class="selections">
               <p>Select a country:</p>
-              <select id="dropdown1" name="Country" onchange="changeBorough()">
+              <select id="dropdown1" name="Country" onchange="changeCountry()">
                 <option value="All">All
               </select>
         </div>
@@ -77,7 +92,7 @@
   <div class="section" id="section-6" data-hash="section-6">
     <div class="api" id="news">
       <p class="title" id=newsPageTitle>Stay Tuned</p>
-      <p class="subtitle" id=newsPageSubTitle>Today's Earthquake News (Sourece: News API)</p>
+      <p class="subtitle" id=newsPageSubTitle>Today's Earthquake News (Source: News API)</p>
       <div class="container" id="container1">
       </div>
       <div class="container" id="container2">
@@ -101,37 +116,23 @@
     </div>
     <div class="section" id="section-8" data-hash="section-8">
       <p><span>About The Project: </span>The project "When The Earth Is Shaking - 118 Years Of Earthquake" aims to take a deep look at the earthquake events happening all over the world since 1900. By integrating various types of visualization, many trends and interesting facts are shown to us. Understanding both the earthquake itself and the causal relation between earthquakes and human behaviors, calendar years, geographic locations, etc. keeps us informed of what's happening with our natural environment.</p>
-      <p><span>About The Author: </span>The owner of this project, Yuwei Qian, is a graduate student at UNC, who majors in Information Science with a specialization of Human-Computer Interaction. She is passionate about technology and design. Creating user-friendly design is her goal and she is constantly inspired by mordern technology and how it helps improve education and life.</p>
+      <p><span>About The Creator: </span>The owner of this project, Yuwei Qian, is a graduate student at UNC, who majors in Information Science with a specialization of Human-Computer Interaction. She is passionate about technology and design. Creating user-friendly design is her goal and she is constantly inspired by modern technology and how it helps improve education and life.</p>
     </div>
 
-    <div class="section" id="section-2" data-hash="section-2">
-      <div class="subtitle" id="tableTitle">Earthquake Data</div>
-      <table id="table">
-        <thead>
-          <tr>
-            <th id="year">Year</th>
-            <th>Country</th>
-            <th>Magnitude</th>
-            <th>Deaths</th>
-            <th>Injuries</th>
-          </tr>
-        </thead>
-      </table>
-    </div>
   </div>
   <script
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
   <script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-<script src="js/dataTables.responsive.js"></script>
-<script src="js/config.js"></script>
-<script src="js/smartscroll.js"></script>
+  <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+  <script src="js/dataTables.responsive.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/smartscroll.js"></script>
   <script src="js/script.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAv4h6HFuncoqMHe4tmSIs_fnA18WEo-yE&callback=initMap"
-    async defer></script>
+  async defer></script>
+
 
 </body>
 </html>

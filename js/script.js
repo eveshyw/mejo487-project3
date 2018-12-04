@@ -10,7 +10,7 @@ var endPoint = 0.5;
 var countryDeathsByMonth = {};
 var seriesData = [];
 
-function changeBorough() {
+function changeCountry() {
   selectedCountry =  $("#dropdown1 option:selected").val();
   selectedMonth = $("#dropdown2 option:selected").val();
   startPoint = parseFloat(selectedMonth);
